@@ -1,0 +1,108 @@
+section + section {
+    text-align: center;
+    @media(min-width:768px){
+          width: 41%;
+          text-align: initial;
+    }
+}
+
+#product-info p{
+    @media(min-width:768px){
+        margin: 0.5em 0;
+        max-width: 400px;
+    }
+    @media(min-width:1200px){
+        font-size: 1.5em;
+    }
+}
+#stars-container{
+    font-size: smaller;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    @media(min-width:768px){
+        justify-content: flex-start;
+        align-items: center;
+    }
+    > p {
+        margin-right: 10px;
+    }
+    p {
+        margin-left: 10px
+    }
+}
+#product-price-container{
+    @media(min-width:768px){
+        max-width: 430px;
+    }
+    @media(min-width:1024px){
+        display: flex;
+        font-size: 18px;
+    }
+    img{
+        height: 80px;
+        width: 120px;
+        border-radius: 12px;
+    }
+    div {
+        @media(min-width:1024px){
+            padding-left: 1em;;
+        }
+       #price{
+            font-size: 30px;
+            margin: 0;
+            + p {
+                margin: 5px 0
+            }
+        }
+
+    }  
+}
+#delivery-info {
+    margin-top: 1em;
+    p {
+        margin: 0.2em 0;
+        font-size: small;
+        @media(min-width:768px){
+            font-size: 12px;
+        }
+        @media(min-width:1024px){
+            font-size: 16px;
+            margin-bottom: 1px;
+        }
+    }
+}
+#related-items{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media(min-width:1024px){
+        // height: 50%;
+    }
+    .related-images-container {
+        img {
+            height: 60px;
+            border-radius: 12px;
+            padding: 4px;
+            @media(min-width:768px){
+                width: 80px;
+            }
+        }
+    }
+}
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    button{
+        margin: 0.5em 0;
+        padding: 15px;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        background-color: #FFCD68;
+        + button {
+        background-color: #E8EDEE;
+        }
+    }
+}
